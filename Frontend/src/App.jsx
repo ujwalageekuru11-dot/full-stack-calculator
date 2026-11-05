@@ -31,7 +31,7 @@ function App() {
     setExpression(currentExpression)
     try {
       const response = await fetch(
-        `http://localhost:3000/${operations[operator]}/${firstNumber}/${display}`
+        `https://full-stack-calculator-885s.onrender.com/${operations[operator]}/${firstNumber}/${display}`
       )
       const result = await response.json()
       if (result.success) {
